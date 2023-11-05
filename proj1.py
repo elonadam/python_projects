@@ -1,3 +1,8 @@
+# first projects from 100 days of code challenge, name generator
+
+
+
+
 print("Hello and welcome to my 1st project in 100 days of code challenge !\nIt's a band name generator")
 
 city_name = input("In which city you grew up ?")
