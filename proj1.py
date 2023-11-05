@@ -5,7 +5,7 @@
 
 print("Hello and welcome to my 1st project in 100 days of code challenge !\nIt's a band name generator")
 
-city_name = input("In which city you grew up ?")
+city_name = input("Which city did you grow up in ?")
 
 pet_name = input("what is your pet name ? ")
 
