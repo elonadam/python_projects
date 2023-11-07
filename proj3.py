@@ -26,17 +26,17 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.") 
 print("you arived to the island and see there is two pathes one to the left and one to the right")
-first_choice = input("which path you want to go ? choose left/right\n")
+first_choice = input("which path you want to go ? choose left/right\n").lower()
 if first_choice == "left":
   print("You walked into a den of wolves, GAME OVER")
 elif first_choice == "right":
   print("Its now dark and you see a big cave infront of you and who knows whats inside")
-  second_choice = input("Will you sleep in the cave or outside in the jungle ? choose cave/jungle\n")
+  second_choice = input("Will you sleep in the cave or outside in the jungle ? choose cave/jungle\n").lower()
   if second_choice == "cave":
     print("A mighty bear was up for a mid-night snack, GAME OVER")
   elif second_choice == "jungle":
     print("You went to a walk this morning and saw a great castle with big 3 doors, red, yellow and black")
-    third_choice = input("which door you choose to open ? choose red/yellow/black\n")
+    third_choice = input("which door you choose to open ? choose red/yellow/black\n").lower()
     if third_choice == "red":
       print("you fell into endless hole in the ground GAME OVER")
     elif third_choice == "yellow":
