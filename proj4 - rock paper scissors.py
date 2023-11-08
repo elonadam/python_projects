@@ -29,7 +29,7 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-# print(type(rock))
+
 moves_list = ["rock", "paper","scissors"]
 ascii_art = [rock,paper,scissors]
 
