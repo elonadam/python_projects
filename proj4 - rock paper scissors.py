@@ -68,4 +68,3 @@ elif cpu_res == scissors and user_choice == rock:
 # elif cpu_res == paper and user_choice == rock:
 else:
      print("cpu choose:\n" +cpu_res + "\nuser choose" + user_choice+"\n Computer Won !")
-#maybe last condition can be just else without checking conditions
