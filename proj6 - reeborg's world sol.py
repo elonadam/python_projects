@@ -36,10 +36,6 @@ def turn_right():
     turn_left()
     turn_left()
 
-def jump():
-    turn_left()
-    move()
-
 while not is_facing_north():
         turn_left()    
 turn_right()
