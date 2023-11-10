@@ -65,7 +65,7 @@ not_dead = not_completed = True
 chosen_word = random.choice(word_list)
 blank_word = list(len(chosen_word) * '_')
 print("Welcom to 'hang man' can you guess the name of the animal ?")
-print(blank_word, stages[-1])
+print(blank_word, stages[-1])  
 
 while not_dead and not_completed:
     count = 0
