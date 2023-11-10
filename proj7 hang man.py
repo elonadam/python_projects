@@ -69,7 +69,7 @@ print(blank_word, stages[-1])
 
 while not_dead and not_completed:
     count = 0
-    guess_right = False  #true if at least one letter was guessed
+    guess_right = False  #check if at least one letter was guessed
     guess = input("Guess a letter:\n").lower()
 
     for letter in chosen_word:
