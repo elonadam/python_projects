@@ -1,3 +1,14 @@
+logo = ''' 
+ _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/    '''
+
+                    
 stages = [
     '''
   +---+
@@ -64,7 +75,7 @@ lives = 6  #for letter guesses
 not_dead = not_completed = True
 chosen_word = random.choice(word_list)
 blank_word = list(len(chosen_word) * '_')
-print("Welcom to 'hang man' can you guess the name of the animal ?")
+print(logo + "\nCan you guess the animal?")
 print(blank_word, stages[-1])  
 
 while not_dead and not_completed:
