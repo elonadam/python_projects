@@ -8,7 +8,7 @@ logo = '''
                     __/ |                      
                    |___/    '''
 
-                    
+
 stages = [
     '''
   +---+
@@ -99,7 +99,5 @@ while not_dead and not_completed:
         print("you Won ! you saved him !")
         not_completed = False
     elif not lives:
-        print("Oh no he died !")
+        print("Oh no he died ! the word was" , chosen_word)
         not_dead = False
-
-
