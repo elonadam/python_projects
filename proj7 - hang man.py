@@ -81,7 +81,8 @@ while not_dead and not_completed:
     count = 0
     guess_right = False  #check if at least one letter was guessed
     guess = input("Guess a letter:\n").lower()
-
+    if guess in blank_word:
+        print(f"You've already guessed {guess}")
     for letter in chosen_word:
         if letter == guess:
             blank_word[count] = guess
@@ -91,7 +92,7 @@ while not_dead and not_completed:
 
     if not guess_right:
         lives -= 1
-        print("\nWrong! try again " + stages[lives])
+        print(f"\nYou guessed {guess}, that's not in the word. You lose a life." + stages[lives])
 
     print(blank_word, "\n")
 
