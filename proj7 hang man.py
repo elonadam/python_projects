@@ -91,3 +91,5 @@ while not_dead and not_completed:
     elif not lives:
         print("Oh no he died !")
         not_dead = False
+
+
