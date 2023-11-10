@@ -70,13 +70,12 @@ stages = [
 
 import random
 
-word_list = ["python", "baboon", "camel", "penguin", "zebra"]
+word_list = ["python", "baboon", "camel", "penguin","elephant", "lion", "tiger", "bear", "giraffe", "zebra", "monkey", "rabbit", "horse", "snake", "turtle", "penguin", "koala", "kangaroo", "dolphin", "shark"]
 lives = 6  #for letter guesses
 not_dead = not_completed = True
 chosen_word = random.choice(word_list)
 blank_word = list(len(chosen_word) * '_')
 print(logo + "\nCan you guess the animal?")
-print(blank_word, stages[-1])  
 
 while not_dead and not_completed:
     count = 0
