@@ -44,22 +44,6 @@ while user_answer == 'yes':
       shifted_letter = alphabet[(letter_place + shift) % 26]
       encrypt_text += shifted_letter
     print(f"the {direction} result is: " + encrypt_text) 
-    
-  
-  
-  # def decrypt (text_list, shifts):
-  #   for letter in text_list: 
-  #     letter_place = text_list.index(letter) # the letter placment inside the given text
-  #     text_list[letter_place] = alphabet[(alphabet.index(letter) - shift) % 26] #shift each letter of the 'text' forwards in the alphabet
-  #   print(text_list) # encrypted text from type list
-    
-  # text_list = [] 
-  # for j in text:
-  #   text_list.append(j)  #insert each letter into a list
-  # print(text_list)
+
   encrypt_decrypt(text,shift)
-  # if direction == 'encode':
-  #   encrypt(text, shift)
-  # if direction == 'decode':
-  #   decrypt(text, shift)
   user_answer = input("Do you want to try again ? write yes / no\n").lower()
