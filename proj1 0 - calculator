@@ -51,13 +51,6 @@ def calculator():
     answer = func(num1,num2)
     print(f"{num1} {operator} {num2} = {answer}")
     
-    # if input(f"If you wish to continue with {answer} press 'c'\nIf you want new to start a new calculation press 'y'\nElse any key to exit: ") == 'n':
-    #   break
-    # elif 'c':
-    #   num1 = answer
-    # else:
-    #   toContinue = False
-    #   calculator()
     user_choice = input(f"If you wish to continue with {answer} press 'c'\nIf you want new to start a new calculation press 'y'\nElse press any key to exit: ")
     if  user_choice == 'c':
       num1 = answer
