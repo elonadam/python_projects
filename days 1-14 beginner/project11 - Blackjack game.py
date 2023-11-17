@@ -1,8 +1,5 @@
 #11/100 days of coding, Blackjack game
 
-
-
-
 import random
 
 logo = """
@@ -15,10 +12,6 @@ logo = """
       |  \/ K|                            _/ |                
       `------'                           |__/           
 """
-
-############### Blackjack Project TDL#####################
-
-#to change 11 to 1 if goes beyond 21
 
 ############### My Blackjack House Rules #####################
 
