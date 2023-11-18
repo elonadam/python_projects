@@ -1,9 +1,8 @@
-#14/100 high low game based on instegram figures, who has more followers in millions
+#14/100 high low game based on Instagram figures, who has more followers in millions
 
 import random
 from replit import clear
-from art import logo,vs
-from game_data import data
+from day14data import logo, vs, data
 
 def switch(target_data,target_num,source_data,source_num):
     '''switch between the values of 2 elements that each contains
@@ -23,29 +22,23 @@ def random_input():
 
     #extract the num of followers
     followers_str = rnd_dictionary['follower_count']
-    #print(followers_str)
-    #print(type(followers_str))
-    #followers_str = rnd_dictionary
-
+    
     # Create a new list excluding the second integer element
     values_list = list(rnd_dictionary.values())
     del values_list[1]
 
-
     # Convert the values to strings and join them into a single string
     values_string = ', '.join(map(str, values_list))
-    #print(followers)
-    #return two values as a tuple
-    return followers_str , f"[{values_string}]"
+    return followers_str , f"[{values_string}]"  #return two values as a tuple
 
 
-#print(logo)
+print(logo)
 
 #initilaized data
 followers_a, compare_a = random_input()
 compare_a, followers_a, compare_b, followers_b = switch(compare_a, followers_a, compare_a, followers_a)
 
-guess = True #if player got wrong then false
+guess = True #if the player got wrong set to false
 score = 0
 while guess:
 
@@ -53,14 +46,13 @@ while guess:
   print(vs)
   print(f"Compare B: {compare_b}")
 
-  user_guess = input("Who has more folowers in instegram ? type 'A' or 'B': ").lower()
+  user_guess = input("Who has more followers in Instagram ? type 'A' or 'B': ").lower()
 
   if user_guess == 'a' and followers_a > followers_b:
       clear()
       print("\n\nyou right !\n")
       score += 1
       
-
   elif user_guess == 'a':
       print("Wrong !")
       guess = False
@@ -70,7 +62,6 @@ while guess:
       print("\n\nyou right !\n")
       score += 1
     
-
   else:
       print("Wrong !")
       guess = False
@@ -78,6 +69,4 @@ while guess:
   #switch between the values
   compare_a, followers_a, compare_b, followers_b = switch(compare_a, followers_a, compare_b, followers_b)
 
-
-#outside the while
-print(f"you scored: {score}") #maybe to put inside thr loop
+print(f"you scored: {score}") 
