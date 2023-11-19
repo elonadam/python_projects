@@ -38,7 +38,7 @@ resources = {
 
 def money_bot(coffee_data):
     """responsible to deal with the money issues"""
-    price = coffee_data["cost"]  # extract the price good, to check the type
+    price = coffee_data["cost"]  # Extract the price good, to check the type
     print(f"The price of {user_choice} is ${price}")
     print("Please insert coins.")
 
@@ -48,7 +48,7 @@ def money_bot(coffee_data):
     nickles = int(input("How many quarters?"))
     pennies = int(input("How many pennies?"))
 
-    # calculate total amount and change
+    # calculate the total amount and change
     total_amount = 0.01 * pennies + 0.05 * nickles + 0.1 * dimes + 0.25 * quarters
     change = round(total_amount - price, 2)
 
@@ -98,7 +98,7 @@ while True:
             print(f"Sorry not enough {ingredient} to make {user_choice}.")
             enough_ingredients = False
     if not enough_ingredients or (change := money_bot(coffee_type)) == -1:  # transaction failed duo money or resources
-        continue  # this will lead to a new loop
+        continue  # This will lead to a new loop
     else:
         stats(coffee_type)
         print(f"Here is ${change} in change.")
