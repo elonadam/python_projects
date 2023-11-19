@@ -1,6 +1,5 @@
 #day 4/100 , rock paper scissors game with ascii-art
 
-
 import random
 
 rock = '''
