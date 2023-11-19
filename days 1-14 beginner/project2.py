@@ -1,6 +1,5 @@
 # Second project during 100 days of coding challange, it's a tip calculator 
 
-
 print("Welcome to the tip calculator !\n")
 bill_amount = input("What is the total bill ?\n")
 precentage = input(
