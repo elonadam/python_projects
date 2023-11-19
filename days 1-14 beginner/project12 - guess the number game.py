@@ -1,4 +1,4 @@
-#12 / 100 days ... guess the number simple game
+# 12 / 100 days ... guess the number simple game
 
 
 logo = '''
