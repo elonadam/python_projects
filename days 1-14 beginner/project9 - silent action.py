@@ -12,7 +12,7 @@ logo = '''
                        .-------------.
                       /_______________\\
 '''
-#HINT: You can call clear() to clear the output in the console.
+
 print(logo)
 print("Welcome to the silent action program.")
 bids = {}
