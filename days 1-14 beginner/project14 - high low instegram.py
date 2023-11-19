@@ -38,7 +38,7 @@ print(logo)
 followers_a, compare_a = random_input()
 compare_a, followers_a, compare_b, followers_b = switch(compare_a, followers_a, compare_a, followers_a)
 
-guess = True #if the player got wrong set to false
+guess = True #if the player got the wrong set to false
 score = 0
 while guess:
 
