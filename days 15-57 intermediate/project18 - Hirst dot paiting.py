@@ -1,18 +1,12 @@
+# day 18/100 of coding, recreating Hirst dot painting, using colorgram extracted the original
+# colors from the painting, using the code in lines 8-16
+
 import colorgram
 import random
 from turtle import Turtle, Screen
 
-colors = colorgram.extract('image.jpg', 120)
-
-# first_color = colors[0]
-# rgb = first_color.rgb
-# # colors is a list
-
-#
-# print(rgb)
-
 tommy = Turtle()
-
+# colors = colorgram.extract('image.jpg', 120)
 # colors_list = []
 # for color in colors:
 #     r = color.rgb.r
@@ -20,8 +14,6 @@ tommy = Turtle()
 #     b = color.rgb.b
 #     curr_rgb = (r , g, b)
 #     colors_list.append(curr_rgb)
-# print(colors_list)
-
 
 color_bank = [
     (213, 154, 96), (52, 107, 132), (179, 77, 31), (202, 142, 31), (115, 155, 171), (124, 79, 99),
@@ -32,18 +24,9 @@ color_bank = [
     (11, 112, 106)
 ]
 
-
-# def change_color():
-#     tommy.pencolor(random.choice(color_bank))
-#     print(tommy.pencolor())
 def change_color():
     color = random.choice(color_bank)
     tommy.pencolor(color[0] / 255, color[1] / 255, color[2] / 255)
-
-
-# size of dot 20
-# space beteeen is 50
-# 10X10 dots map
 
 def draw_dots_line():
     start_place = -200
