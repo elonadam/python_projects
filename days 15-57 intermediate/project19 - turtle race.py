@@ -1,8 +1,6 @@
 # 19/100, turtles race based on Turtle graphics
 
-
 import random
-import turtle
 from turtle import Turtle, Screen
 
 all_turtles = []
