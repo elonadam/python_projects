@@ -1,5 +1,5 @@
-# day 18/100 of coding, recreating Hirst dot painting, using colorgram extracted the original
-# colors from the painting, using the code in lines 8-16
+# day 18/100 of coding, recreating Hirst dot painting.
+# used colorgram to extract the original colors from the painting, lines 8-16
 
 import colorgram
 import random
