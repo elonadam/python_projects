@@ -1,3 +1,5 @@
+# day 16/ 100 , implementation of a coffee machine by object-oriented programming
+
 from menu import Menu, MenuItem
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
