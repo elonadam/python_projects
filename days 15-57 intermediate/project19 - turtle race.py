@@ -1,4 +1,4 @@
-# 19/100, turtles race based on Turtle graphics
+# 19/100, graphical turtles race based on Turtle graphics
 
 import random
 from turtle import Turtle, Screen
