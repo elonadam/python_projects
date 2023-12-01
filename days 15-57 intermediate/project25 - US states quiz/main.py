@@ -58,7 +58,7 @@ while game_is_on:
             for state in states_name:
                 if state not in correct_guess:
                     states_to_learn.append(state)
-            print(states_to_learn)
+            #print(states_to_learn)
             df = pd.DataFrame(states_to_learn)
             df.to_csv('state_to_learn.csv', index=False)
             break
