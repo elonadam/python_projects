@@ -44,11 +44,7 @@ while game_is_on:
 
     answer_state = screen.textinput(title=f"{num}/50 states correct", prompt="What's another state name?").title()
     for state in states_name:
-        # if answer_state in correct_guess:
-        #     print("already guessed")
-
         if answer_state == state:
-            print("yay")
             num += 1
             print_state_name(answer_state)
             correct_guess.append(answer_state)  # add state to correct guess list
@@ -60,5 +56,3 @@ while game_is_on:
 
         else:
             pass
-
-# if answer_state == data[]
