@@ -1,5 +1,7 @@
 import turtle
 import pandas
+import pandas as pd
+
 from names_board import NamesBoard
 
 # In order to get the x,y coordinates of the states on the image I used this code
@@ -17,13 +19,13 @@ image = "blank_states_img.gif"
 screen.addshape(image)
 turtle.shape(image)
 
-
 # Data structures and Objects
 names_board = NamesBoard()
 data = pandas.read_csv("50_states.csv")
 states_name = data["state"]
 states_dic = pandas.DataFrame.to_dict(data)
 correct_guess = []
+states_to_learn = []
 
 
 def print_state_name(name):
@@ -44,14 +46,21 @@ while game_is_on:
 
     answer_state = screen.textinput(title=f"{num}/50 states correct", prompt="What's another state name?").title()
     for state in states_name:
+
         if answer_state == state:
+            print("yay")
             num += 1
             print_state_name(answer_state)
             correct_guess.append(answer_state)  # add state to correct guess list
-        elif answer_state == "Exit":
+        elif answer_state == "Exit":  # make csv file with the names of the unguessed states
             game_is_on = False
             print("why?! game was closed by user")
-            print(correct_guess)
+            for state in states_name:
+                if state not in correct_guess:
+                    states_to_learn.append(state)
+            print(states_to_learn)
+            df = pd.DataFrame(states_to_learn)
+            df.to_csv('state_to_learn.csv', index=False)
             break
 
         else:
