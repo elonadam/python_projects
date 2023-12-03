@@ -10,7 +10,6 @@ from names_board import NamesBoard
 #
 # turtle.onscreenclick(get_mouse_clic_cor)
 # turtle.mainloop()
-#
 
 # Screen settings
 screen = turtle.Screen()
