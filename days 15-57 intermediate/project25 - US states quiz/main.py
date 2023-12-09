@@ -52,10 +52,7 @@ while game_is_on:
         elif answer_state == "Exit":  # make csv file with the names of the unguessed states
             game_is_on = False
             print("why?! game was closed by user")
-            for state in states_name:
-                if state not in correct_guess:
-                    states_to_learn.append(state)
-            #print(states_to_learn)
+            states_to_learn = [state for state in states_name if state not in correct_guess]
             df = pd.DataFrame(states_to_learn)
             df.to_csv('state_to_learn.csv', index=False)
             break
