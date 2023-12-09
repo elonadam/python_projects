@@ -24,8 +24,6 @@ data = pandas.read_csv("50_states.csv")
 states_name = data["state"]
 states_dic = pandas.DataFrame.to_dict(data)
 correct_guess = []
-states_to_learn = []
-
 
 def print_state_name(name):
     """finds the state's x,y coordinates and print the state's name on the map"""
