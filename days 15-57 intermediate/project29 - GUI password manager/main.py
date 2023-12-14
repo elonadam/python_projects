@@ -2,7 +2,6 @@ from tkinter import *
 from tkinter import messagebox
 from random import randint, shuffle, choice
 import pyperclip
-GREY = '#BBBBBB'
 LIGHT_GREY = '#E2D5D5'
 
 
