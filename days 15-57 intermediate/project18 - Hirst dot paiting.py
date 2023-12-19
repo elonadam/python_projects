@@ -29,6 +29,7 @@ def change_color():
     tommy.pencolor(color[0] / 255, color[1] / 255, color[2] / 255)
 
 def draw_dots_line():
+    tommy.hideturtle()
     start_place = -200
     new_row_place = -200
     tommy.penup()
