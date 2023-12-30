@@ -1,3 +1,6 @@
+# GUI that shows quotes of kanye based on API request
+
+
 from tkinter import *
 import requests
 
