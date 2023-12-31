@@ -1,7 +1,7 @@
-# this program sending email when the 2 conditions are true:
-# 1. the ISS is passing in the sky near the location of the user
-# 2. its night time therefore the ISS is visible 
-
+# This program sending email when the 2 conditions are true:
+# 1. The ISS is passing in the sky near the location of the user
+# 2. It is night time therefore the ISS is visible 
+# Program loops every 60 seconds
 
 import requests
 from datetime import datetime
@@ -60,7 +60,7 @@ def iss_in_the_sky():
 
 
 while True:
-    time.sleep()
+    time.sleep(60)
     if nighttime() and iss_overhead():
         iss_in_the_sky()
 
