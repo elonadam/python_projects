@@ -5,8 +5,8 @@ from random import randint
 
 gmail_smtp = "smtp.gmail.com"
 outlook_smtp = "smtp-mail.outlook.com"
-my_email = "beeragain3@gmail.com"
-my_password = "icpnrfjkarctgedo "
+my_email = "beeragain3@gmail.com" # change to your email to send from
+my_password = "icpnrfjkarctgedo " # change to your app-password you got from your account 
 now = dt.datetime.now()
 today = now.day, now.month  # dd,mm tuple
 
@@ -20,7 +20,7 @@ if today in bd_dict:
         templet = file.read()
         bd_card = templet.replace("[NAME]", bd_dict[today]["name"])
 
-        with smtplib.SMTP(gmail_smtp) as connection:
+        with smtplib.SMTP(gmail_smtp) as connection: #if you wish to send from outlook or something else change the smtp format
             connection.starttls()
             connection.login(my_email,my_password)
             connection.sendmail(from_addr=my_email,
