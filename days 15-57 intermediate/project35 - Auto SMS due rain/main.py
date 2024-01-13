@@ -22,7 +22,7 @@ endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 response = requests.get(endpoint, params=tlv_params)
 response.raise_for_status()
 weather_data = response.json()
-fake_target = "+972545679778"
+fake_target = "write target number here"
 phone_number = "+14845145064"
 # print(weather_data["list"][0]["weather"][0]["id"])
 
