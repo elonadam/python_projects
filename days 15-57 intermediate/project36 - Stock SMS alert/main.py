@@ -6,7 +6,7 @@ from twilio.rest import Client
 
 account_sid = 'AC43d33746c61b3124371833da9f4f85b5'
 auth_token = '001d564321a27b13cabe7c13a168da7b'
-fake_target = "+972545679778"
+fake_target = "write target number here"
 phone_number = "+14845145064"
 
 STOCK_NAME = "AAPL"
