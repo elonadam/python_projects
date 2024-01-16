@@ -1,3 +1,8 @@
+# This code updates a Google sheet file that tracks your exercise activity,
+# Simply type in your own words what have you done today like "I ran 4km and walked for 30 minutes,
+# And the code with the help of APIs will calculate calories and more data and will update your Google sheet doc
+
+
 import requests
 import os
 from datetime import datetime
@@ -6,7 +11,7 @@ URL = "https://trackapi.nutritionix.com/v2/natural/exercise" #website that does 
 NUTRIT_KEY ="0f19628df221350af20fc3f1d9321c69" 
 APP_ID = "d81371e0"
 
-sheet_url = "https://api.sheety.co/84d665c812a62c08c15ad2c0f81a0f65/myWorkouts/workouts" # url for API that updates google sheets files
+sheet_url = "https://api.sheety.co/84d665c812a62c08c15ad2c0f81a0f65/myWorkouts/workouts" # url for API that updates Google Sheets files
 
 workout = input("\nwhat exercise you did today ?  ") # e.g run 3km and walked one hour
 
