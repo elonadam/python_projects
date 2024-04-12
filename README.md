@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Elon</h1>
-<h3 align="center">A passionate python developer</h3>
+<h3 align="center">A passionate python and web developer</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=elonadam&label=Profile%20views&color=0e75b6&style=flat" alt="elonadam" /> </p>
 
@@ -7,7 +7,7 @@
 
 - 🌱 I’m currently learning **web development**
 
-- 💬 Ask me about **python and cyber secuirity**
+- 💬 Ask me about **python , web and cyber secuirity**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
