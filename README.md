@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=elonadam&label=Profile%20views&color=0e75b6&style=flat" alt="elonadam" /> </p>
 
-- 🔭 I’m currently working on several [pythonTools](https://github.com/elonadam/python_projects/tree/main/days%2015-57%20intermediate)
+- 🔭 I’m currently working on [pythonTools](https://github.com/elonadam/python_projects/tree/main/days%2015-57%20intermediate)
 
 - 🌱 I’m currently learning **web development**
 
