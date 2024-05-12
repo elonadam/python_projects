@@ -5,7 +5,7 @@
 
 - 🔭 I’m currently working on [pythonTools](https://github.com/elonadam/python_projects/tree/main/days%2015-57%20intermediate)
 
-- 🌱 I’m currently learning **web development**
+- 🌱 I’m currently learning **python**, **web development**
 
 - 💬 Ask me about **python , web and cyber security**
 
