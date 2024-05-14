@@ -1,14 +1,14 @@
-
 from flight_data import FlightData
 import requests
-
-kiwi_key = 'Tg9wNxP9d_nfcG7t2qEFIrumyT5wL534'
+import os
+# api documentation https://tequila.kiwi.com/portal/docs/tequila_api/search_api
 
 kiwi_iati_url = 'https://api.tequila.kiwi.com/locations/query?'
 kiwi_flight_search_url = 'https://api.tequila.kiwi.com/v2/search?'
 
-header = {
-    "apikey": kiwi_key
+header = {  # kiwi flights api key
+     'apikey': 'Tg9wNxP9d_nfcG7t2qEFIrumyT5wL534'
+    #"apikey": os.environ.get('KIWIKEY')
 }
 
 
@@ -37,14 +37,15 @@ class FlightSearch:
             'nights_in_dst_from': 7,
             'nights_in_dst_to': 28,
             'adults': 2,
-            "one_for_city": 1,
+            #"one_for_city": 1,
             "max_stopovers": 0,
             'curr': 'USD',
 
         }
         response = requests.get(url=kiwi_flight_search_url, params=parameters, headers=header)
         try:
-            data = response.json()["deta"][0]
+            data = response.json()["data"][0]
+            # print(data)
         except IndexError:
             print(f"No flight found for {dest_city_iata}.")
             return None
@@ -56,6 +57,7 @@ class FlightSearch:
             destination_city=data["route"][0]["cityTo"],
             destination_airport=data["route"][0]["flyTo"],
             out_date=data["route"][0]["local_departure"].split("T")[0],
+            deep_link=data["deep_link"],
             return_date=data["route"][1]["local_departure"].split("T")[0]
         )
         print(f"{flight_data.destination_city}: ${flight_data.price}")
