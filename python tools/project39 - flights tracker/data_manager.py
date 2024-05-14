@@ -14,13 +14,13 @@ class DataManager:
         self.dest_data = data['prices']
         return self.dest_data
 
-    def store_iata_codes(self, city_id, iata_code):
+    def store_iata_codes(self):
         for city in self.dest_data:
             body = {
                 'price': {
-                    "iataCode": iata_code  # key needs to be camelCase although google sheet column is not
+                    "iataCode": city['iataCode']  # key needs to be camelCase although google sheet column is not
                 }
             }
-            response = requests.put(url=sheety_url + f"/{city_id}", json=body)
+            response = requests.put(url=f"{sheety_url}/{city['id']}", json=body)
             response.raise_for_status()
-            print(response.text)
+
