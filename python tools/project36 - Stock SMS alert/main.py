@@ -13,7 +13,7 @@ news_api = os.environ.get('NEWSAPI')
 fake_target = os.environ.get('MYPHONE')
 phone_number = "+14062296126"
 
-PRICE_CHANGE = 0  # absolute change to check for
+PRICE_CHANGE = 3  # absolute change to check for
 
 holdings = [
     {
