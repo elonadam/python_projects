@@ -7,8 +7,7 @@ kiwi_iati_url = 'https://api.tequila.kiwi.com/locations/query?'
 kiwi_flight_search_url = 'https://api.tequila.kiwi.com/v2/search?'
 
 header = {  # kiwi flights api key
-     'apikey': 'Tg9wNxP9d_nfcG7t2qEFIrumyT5wL534'
-    #"apikey": os.environ.get('KIWIKEY')
+    "apikey": os.environ.get('KIWIKEY')
 }
 
 
