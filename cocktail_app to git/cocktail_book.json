@@ -1,3 +1,7 @@
+
+
+
+
 {
     "Mojito": {
         "name": "Mojito",
@@ -154,5 +158,510 @@
         "is_favorite": false,
         "times_made": 0,
         "method": "Blended"
+    },
+    "Bellini": {
+        "name": "Bellini",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "100 ml Prosecco",
+            "50 ml White Peach Puree"
+        ],
+        "need_to_make": "Prosecco, White Peach Puree",
+        "instructions": "Pour peach puree into the mixing glass with ice, add the Prosecco wine. Stir gently and pour into a chilled flute glass.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Stirred"
+    },
+    "Black Russian": {
+        "name": "Black Russian",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "50 ml Vodka",
+            "20 ml Coffee Liqueur"
+        ],
+        "need_to_make": "Vodka, Coffee Liqueur",
+        "instructions": "Pour the ingredients into an old fashioned glass filled with ice cubes. Stir gently.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Built"
+    },
+    "Bloody Mary": {
+        "name": "Bloody Mary",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "45 ml Vodka",
+            "90 ml Tomato Juice",
+            "15 ml Fresh Lemon Juice",
+            "2 dashes Worcestershire Sauce",
+            "1 dash Tabasco",
+            "1 dash Celery Salt",
+            "1 dash Pepper"
+        ],
+        "need_to_make": "Vodka, Tomato Juice, Fresh Lemon Juice, Worcestershire Sauce, Tabasco, Celery Salt, Pepper",
+        "instructions": "Stir gently all the ingredients in a mixing glass with ice, pour into rocks glass.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Stirred"
+    },
+    "Caipirinha": {
+        "name": "Caipirinha",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "60 ml Cachaça",
+            "1 Lime cut into small wedges",
+            "4 Teaspoons White Cane Sugar"
+        ],
+        "need_to_make": "Cachaça, Lime, White Cane Sugar",
+        "instructions": "Place lime and sugar into a double old fashioned glass and muddle gently. Fill the glass with cracked ice and add Cachaça. Stir gently to involve ingredients.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Built"
+    },
+    "Champagne Cocktail": {
+        "name": "Champagne Cocktail",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "90 ml Chilled Champagne",
+            "10 ml Cognac",
+            "2 dashes Angostura bitters",
+            "1 sugar cube"
+        ],
+        "need_to_make": "Chilled Champagne, Cognac, Angostura bitters, Sugar Cube",
+        "instructions": "Place the sugar cube with 2 dashes of bitters in a large Champagne glass, add the cognac. Pour gently chilled Champagne.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Built"
+    },
+    "Corpse Reviver #2": {
+        "name": "Corpse Reviver #2",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "30 ml Gin",
+            "30 ml Cointreau",
+            "30 ml Lillet Blonde",
+            "30 ml Fresh Lemon Juice",
+            "1 dash Absinthe"
+        ],
+        "need_to_make": "Gin, Cointreau, Lillet Blonde, Fresh Lemon Juice, Absinthe",
+        "instructions": "Pour all ingredients into shaker with ice. Shake well and strain into chilled cocktail glass.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "French 75": {
+        "name": "French 75",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "30 ml Gin",
+            "15 ml Fresh Lemon Juice",
+            "2 dashes Sugar Syrup",
+            "60 ml Champagne"
+        ],
+        "need_to_make": "Gin, Fresh Lemon Juice, Sugar Syrup, Champagne",
+        "instructions": "Pour all ingredients, except champagne, into shaker with ice cubes. Shake well and strain into champagne flute. Top up with champagne. Stir gently.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Mai Tai": {
+        "name": "Mai Tai",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "40 ml White Rum",
+            "20 ml Dark Rum",
+            "15 ml Orange Curaçao",
+            "15 ml Fresh Lime Juice",
+            "10 ml Orgeat Syrup"
+        ],
+        "need_to_make": "White Rum, Dark Rum, Orange Curaçao, Fresh Lime Juice, Orgeat Syrup",
+        "instructions": "Shake all ingredients with ice. Strain into old fashioned glass half filled with crushed ice.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Pisco Sour": {
+        "name": "Pisco Sour",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "60 ml Pisco",
+            "30 ml Fresh Lemon Juice",
+            "20 ml Simple Syrup",
+            "1 Egg White"
+        ],
+        "need_to_make": "Pisco, Fresh Lemon Juice, Simple Syrup, Egg White",
+        "instructions": "Shake and strain into a chilled champagne flute. Dash some Angostura bitters on top.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Sazerac": {
+        "name": "Sazerac",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "50 ml Cognac",
+            "10 ml Absinthe",
+            "1 Sugar Cube",
+            "2 dashes Peychaud's Bitters"
+        ],
+        "need_to_make": "Cognac, Absinthe, Sugar Cube, Peychaud's Bitters",
+        "instructions": "Rinse a chilled old-fashioned glass with the absinthe, add crushed ice and set it aside. In a separate mixing glass, muddle the sugar cube with the bitters, add the cognac, and stir with ice. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the lemon peel for garnish.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Stirred"
+    },
+    "Sidecar": {
+        "name": "Sidecar",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "50 ml Cognac",
+            "20 ml Triple Sec",
+            "20 ml Fresh Lemon Juice"
+        ],
+        "need_to_make": "Cognac, Triple Sec, Fresh Lemon Juice",
+        "instructions": "Pour all ingredients into a cocktail shaker filled with ice. Shake well and strain into a chilled cocktail glass.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Tom Collins": {
+        "name": "Tom Collins",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "60 ml Old Tom Gin",
+            "15 ml Fresh Lemon Juice",
+            "15 ml Sugar Syrup",
+            "60 ml Soda Water"
+        ],
+        "need_to_make": "Old Tom Gin, Fresh Lemon Juice, Sugar Syrup, Soda Water",
+        "instructions": "Pour all ingredients into a shaker with ice. Shake well and strain into a chilled Collins glass filled with ice cubes. Top up with soda water. Garnish with a lemon slice and a cherry.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Vesper": {
+        "name": "Vesper",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "60 ml Gin",
+            "20 ml Vodka",
+            "10 ml Lillet Blonde"
+        ],
+        "need_to_make": "Gin, Vodka, Lillet Blonde",
+        "instructions": "Shake all ingredients with ice and strain into a chilled cocktail glass. Garnish with a lemon twist.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Zombie": {
+        "name": "Zombie",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "45 ml White Rum",
+            "45 ml Golden Rum",
+            "30 ml Dark Rum",
+            "20 ml Apricot Brandy",
+            "20 ml Pineapple Juice",
+            "15 ml Fresh Lime Juice",
+            "10 ml Grenadine",
+            "Dash of Angostura Bitters"
+        ],
+        "need_to_make": "White Rum, Golden Rum, Dark Rum, Apricot Brandy, Pineapple Juice, Fresh Lime Juice, Grenadine, Angostura Bitters",
+        "instructions": "Shake all ingredients well with ice and strain into a large highball glass filled with ice. Garnish with a mint sprig.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Boulevardier": {
+        "name": "Boulevardier",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "45 ml Bourbon or Rye Whiskey",
+            "30 ml Campari",
+            "30 ml Sweet Vermouth"
+        ],
+        "need_to_make": "Bourbon or Rye Whiskey, Campari, Sweet Vermouth",
+        "instructions": "Stir all ingredients with ice and strain into a chilled cocktail glass. Garnish with an orange twist.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Stirred"
+    },
+    "French Martini": {
+        "name": "French Martini",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "45 ml Vodka",
+            "15 ml Raspberry Liqueur",
+            "15 ml Fresh Pineapple Juice"
+        ],
+        "need_to_make": "Vodka, Raspberry Liqueur, Fresh Pineapple Juice",
+        "instructions": "Shake all ingredients with ice and strain into a chilled cocktail glass. Garnish with a raspberry.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Hemingway Special": {
+        "name": "Hemingway Special",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "60 ml White Rum",
+            "15 ml Maraschino Liqueur",
+            "40 ml Fresh Grapefruit Juice",
+            "15 ml Fresh Lime Juice"
+        ],
+        "need_to_make": "White Rum, Maraschino Liqueur, Fresh Grapefruit Juice, Fresh Lime Juice",
+        "instructions": "Shake all ingredients with ice and strain into a chilled cocktail glass. Garnish with a cherry.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+      "Singapore Sling": {
+        "name": "Singapore Sling",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "30 ml Gin",
+            "15 ml Cherry Liqueur",
+            "7.5 ml Cointreau",
+            "7.5 ml DOM Bénédictine",
+            "120 ml Pineapple Juice",
+            "15 ml Lime Juice",
+            "10 ml Grenadine",
+            "1 dash Angostura Bitters"
+        ],
+        "need_to_make": "Gin, Cherry Liqueur, Cointreau, DOM Bénédictine, Pineapple Juice, Lime Juice, Grenadine, Angostura Bitters",
+        "instructions": "Shake all ingredients with ice cubes. Strain into highball glass. Garnish with pineapple slice and cherry.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+      "Last Word": {
+        "name": "Last Word",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "22.5 ml Gin",
+            "22.5 ml Green Chartreuse",
+            "22.5 ml Maraschino Liqueur",
+            "22.5 ml Fresh Lime Juice"
+        ],
+        "need_to_make": "Gin, Green Chartreuse, Maraschino Liqueur, Fresh Lime Juice",
+        "instructions": "Shake all ingredients with ice and strain into a chilled cocktail glass.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Paper Plane": {
+        "name": "Paper Plane",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "30 ml Bourbon Whiskey",
+            "30 ml Aperol",
+            "30 ml Amaro Nonino",
+            "30 ml Fresh Lemon Juice"
+        ],
+        "need_to_make": "Bourbon Whiskey, Aperol, Amaro Nonino, Fresh Lemon Juice",
+        "instructions": "Pour all ingredients into a cocktail shaker filled with ice. Shake well and strain into a chilled cocktail glass.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Spicy Fifty": {
+        "name": "Spicy Fifty",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "50 ml Vanilla Vodka",
+            "15 ml Elderflower Cordial",
+            "15 ml Fresh Lime Juice",
+            "10 ml Honey Syrup",
+            "2 thin slices Red Chili Pepper"
+        ],
+        "need_to_make": "Vanilla Vodka, Elderflower Cordial, Fresh Lime Juice, Honey Syrup, Red Chili Pepper",
+        "instructions": "Add all ingredients to a shaker with ice. Shake well and double strain into a chilled cocktail glass. Garnish with a red chili pepper.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Black Russian": {
+        "name": "Black Russian",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "50 ml Vodka",
+            "20 ml Coffee Liqueur"
+        ],
+        "need_to_make": "Vodka, Coffee Liqueur",
+        "instructions": "Pour the ingredients into an old fashioned glass filled with ice cubes. Stir gently.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Built"
+    },
+    "Planter's Punch": {
+        "name": "Planter's Punch",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "45 ml Jamaican Rum",
+            "30 ml Fresh Lime Juice",
+            "30 ml Sugar Cane Juice"
+        ],
+        "need_to_make": "Jamaican Rum, Fresh Lime Juice, Sugar Cane Juice",
+        "instructions": "Pour all ingredients directly into a small tumbler or a typical terracotta glass. Add dilution up to taste, it can be given by water, ice or fresh juices.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Built"
+    },
+    "Long Island Iced Tea": {
+        "name": "Long Island Iced Tea",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "15 ml Tequila",
+            "15 ml Vodka",
+            "15 ml White Rum",
+            "15 ml Cointreau",
+            "15 ml Gin",
+            "30 ml Lemon Juice",
+            "20 ml Simple Syrup",
+            "Top with Cola"
+        ],
+        "need_to_make": "Tequila, Vodka, White Rum, Cointreau, Gin, Lemon Juice, Simple Syrup, Cola",
+        "instructions": "Add all ingredients into highball glass filled with ice. Stir gently. Optionally garnish with lemon slice.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Built"
+    },
+    "Porn Star Martini": {
+        "name": "Porn Star Martini",
+        "abv": "none",
+        "is_easy_to_make": false,
+        "ingredients": [
+            "50 ml Vanilla Vodka",
+            "15 ml Passion Fruit Liqueur",
+            "15 ml Passion Fruit Purée",
+            "10 ml Vanilla Syrup",
+            "25 ml Fresh Lime Juice",
+            "Half a Fresh Passion Fruit (for garnish)",
+            "50 ml Prosecco (served on the side)"
+        ],
+        "need_to_make": "Vanilla Vodka, Passion Fruit Liqueur, Passion Fruit Purée, Vanilla Syrup, Fresh Lime Juice, Passion Fruit, Prosecco",
+        "instructions": "Add the vanilla vodka, passion fruit liqueur, passion fruit purée, vanilla syrup, and fresh lime juice into a cocktail shaker filled with ice. Shake well until the mixture is chilled. Strain into a chilled martini glass. Garnish with half a passion fruit. Serve with a shot of prosecco on the side.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Gin Basil Smash": {
+        "name": "Gin Basil Smash",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "60 ml Gin",
+            "25 ml Fresh Lemon Juice",
+            "15 ml Simple Syrup",
+            "8-10 Fresh Basil Leaves"
+        ],
+        "need_to_make": "Gin, Fresh Lemon Juice, Simple Syrup, Fresh Basil Leaves",
+        "instructions": "Muddle the basil leaves and simple syrup in a shaker to release the basil's aroma. Add the gin and fresh lemon juice. Fill the shaker with ice and shake vigorously. Double strain into a chilled rocks glass filled with ice. Garnish with a sprig of basil.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Naked and Famous": {
+        "name": "Naked and Famous",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "22.5 ml Mezcal",
+            "22.5 ml Aperol",
+            "22.5 ml Yellow Chartreuse",
+            "22.5 ml Fresh Lime Juice"
+        ],
+        "need_to_make": "Mezcal, Aperol, Yellow Chartreuse, Fresh Lime Juice",
+        "instructions": "Combine all ingredients in a shaker with ice. Shake well until chilled. Strain into a chilled coupe glass. No garnish is traditionally used.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Amaretto Sour": {
+        "name": "Amaretto Sour",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "60 ml Amaretto",
+            "25 ml Fresh Lemon Juice",
+            "10 ml Simple Syrup",
+            "15 ml Egg White (optional for froth)",
+            "Dash of Angostura Bitters (optional)"
+        ],
+        "need_to_make": "Amaretto, Fresh Lemon Juice, Simple Syrup, Egg White, Angostura Bitters",
+        "instructions": "If using egg white, dry shake (shake without ice) the amaretto, lemon juice, simple syrup, and egg white to create froth. Add ice to the shaker and shake again until chilled. Strain into a rocks glass filled with ice. Garnish with a lemon twist and a cherry. Add a dash of Angostura bitters on top if desired.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Espresso Martini": {
+        "name": "Espresso Martini",
+        "abv": "none",
+        "is_easy_to_make": true,
+        "ingredients": [
+            "50 ml Vodka",
+            "30 ml Freshly Brewed Espresso",
+            "15 ml Coffee Liqueur",
+            "10 ml Simple Syrup",
+            "Coffee Beans (for garnish)"
+        ],
+        "need_to_make": "Vodka, Freshly Brewed Espresso, Coffee Liqueur, Simple Syrup, Coffee Beans",
+        "instructions": "Add the vodka, freshly brewed espresso, coffee liqueur, and simple syrup into a shaker filled with ice. Shake vigorously until well-chilled. Strain into a chilled martini glass. Garnish with three coffee beans.",
+        "personal_notes": "none",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
     }
+
 }
