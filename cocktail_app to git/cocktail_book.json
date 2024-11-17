@@ -1,0 +1,158 @@
+{
+    "Mojito": {
+        "name": "Mojito",
+        "abv": 12.0,
+        "is_easy_to_make": false,
+        "ingredients": [
+            "50ml White Rum",
+            "2 tsp Sugar",
+            "30ml Lime Juice",
+            "Soda Water (to top)",
+            "5 Mint Leaves"
+        ],
+        "instructions": "Muddle mint leaves with sugar and lime juice. Add rum, top with soda water, and stir gently.",
+        "personal_notes": "A refreshing drink for summer.",
+        "is_favorite": false,
+        "times_made": 2,
+        "method": "Shaken"
+    },
+    "Negroni": {
+        "name": "Negroni",
+        "abv": 20.0,
+        "is_easy_to_make": true,
+        "ingredients": [
+            "30ml Gin",
+            "30ml Campari",
+            "30ml Sweet Vermouth"
+        ],
+        "instructions": "Add all ingredients to a mixing glass with ice, stir, and strain into a rocks glass with ice.",
+        "personal_notes": "Great.",
+        "is_favorite": true,
+        "times_made": 0,
+        "method": "Stirred"
+    },
+    "Rubicon": {
+        "name": "Rubicon",
+        "abv": 15.0,
+        "is_easy_to_make": true,
+        "ingredients": [
+            "50ml Gin",
+            "30ml Campari",
+            "30ml Lemon Juice",
+            "15ml Passion Fruit Syrup"
+        ],
+        "instructions": "Shake all ingredients with ice and strain into a chilled cocktail glass. Garnish with slapped mint.",
+        "personal_notes": "i made this one",
+        "is_favorite": false,
+        "times_made": 3,
+        "method": "Shaken"
+    },
+    "Old Fashioned": {
+        "name": "Old Fashioned",
+        "abv": 32.0,
+        "is_easy_to_make": true,
+        "ingredients": [
+            "50ml Bourbon or Rye Whiskey",
+            "1 Sugar Cube",
+            "3 Dashes Angostura Bitters",
+            "1 Orange Peel (for garnish)"
+        ],
+        "instructions": "Muddle sugar cube with bitters in a glass, add whiskey, and stir. Garnish with orange peel.",
+        "personal_notes": "A timeless classic.",
+        "is_favorite": false,
+        "times_made": 2,
+        "method": "Stirred"
+    },
+    "Martini": {
+        "name": "Martini",
+        "abv": 30.0,
+        "is_easy_to_make": true,
+        "ingredients": [
+            "60ml Gin or Vodka",
+            "10ml Dry Vermouth",
+            "1 Lemon Twist or Olive (for garnish)"
+        ],
+        "instructions": "Stir gin and vermouth with ice and strain into a chilled glass. Garnish with a twist or olive.",
+        "personal_notes": "Preferably dry.",
+        "is_favorite": false,
+        "times_made": 4,
+        "method": "Stirred"
+    },
+    "Margarita": {
+        "name": "Margarita",
+        "abv": 20.0,
+        "is_easy_to_make": true,
+        "ingredients": [
+            "50ml Tequila",
+            "25ml Lime Juice",
+            "15ml Cointreau"
+        ],
+        "instructions": "Shake ingredients with ice and strain into a glass with a salted rim.",
+        "personal_notes": "Perfect for summer.",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Cosmopolitan": {
+        "name": "Cosmopolitan",
+        "abv": 16.0,
+        "is_easy_to_make": true,
+        "ingredients": [
+            "40ml Vodka",
+            "15ml Triple Sec",
+            "30ml Cranberry Juice",
+            "10ml Lime Juice"
+        ],
+        "instructions": "Shake ingredients with ice and strain into a martini glass. Garnish with lime.",
+        "personal_notes": "Elegant and fruity.",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Daiquiri": {
+        "name": "Daiquiri",
+        "abv": 16.0,
+        "is_easy_to_make": true,
+        "ingredients": [
+            "50ml White Rum",
+            "25ml Lime Juice",
+            "10ml Simple Syrup"
+        ],
+        "instructions": "Shake ingredients with ice and strain into a chilled glass.",
+        "personal_notes": "A perfect balance of sweet and sour.",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Whiskey Sour": {
+        "name": "Whiskey Sour",
+        "abv": 16.0,
+        "is_easy_to_make": true,
+        "ingredients": [
+            "50ml Bourbon",
+            "25ml Lemon Juice",
+            "15ml Simple Syrup",
+            "1 Egg White (optional)"
+        ],
+        "instructions": "Shake all ingredients with ice and strain into a glass. Garnish with a cherry or orange slice.",
+        "personal_notes": "The egg white adds a lovely foam.",
+        "is_favorite": true,
+        "times_made": 0,
+        "method": "Shaken"
+    },
+    "Pina Colada": {
+        "name": "Pina Colada",
+        "abv": 13.0,
+        "is_easy_to_make": true,
+        "ingredients": [
+            "50ml White Rum",
+            "30ml Coconut Cream",
+            "75ml Pineapple Juice"
+        ],
+        "instructions": "Blend all ingredients with ice and serve in a tall glass. Garnish with pineapple and cherry.",
+        "personal_notes": "Tropical vibes.",
+        "is_favorite": false,
+        "times_made": 0,
+        "method": "Blended"
+    }
+}
