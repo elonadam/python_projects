@@ -10,4 +10,4 @@
 https://github.com/rasmusab/iba-cocktails/blob/main/wikipedia/iba-cocktails-wiki.json
 https://www.diffordsguide.com/g/1127/worlds-top-100-cocktails/1-20
 
-![current look](cocktail_app to git/current.png)
+![current look](current.png)
