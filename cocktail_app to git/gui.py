@@ -37,44 +37,43 @@ class CocktailAppGUI:
         self.logo_label = Label(image=self.logo, bg=THEME_COLOR)
         self.logo_label.grid(row=0, column=0, columnspan=3, pady=20)
 
-        # # Add a button with an icon
-        # self.add_icon = PhotoImage(file="button_icon.png")  # Replace with actual file path
-        # self.add_button = Button(
-        #     image=self.add_icon, command=self.add_cocktail, highlightthickness=0, bg=BUTTON_COLOR_PRIMARY
-        # )
-        # self.add_button.grid(row=1, column=0, pady=20)
+        # Icon for add_cocktail button
+        add_cocktail_icon_path = "images/add sq.png"  # Make sure this path is correct
+        add_cocktail_icon = PhotoImage(file=add_cocktail_icon_path)
 
         # Buttons
         self.add_button = Button(
             text="Add Cocktail", command=self.add_cocktail, highlightthickness=0, bg="#8B4513", fg="black",
-            font=FONT_BUTTON
+            font=FONT_BUTTON,
+            image=add_cocktail_icon,
+            compound="top",
         )
-        self.add_button.grid(row=1, column=0, pady=20)
+        self.add_button.grid(row=0, column=0,padx=10, pady=10)
 
         self.view_button = Button(
             text="View Cocktails", command=self.view_cocktails, highlightthickness=0, bg="#8B4513", fg="black",
             font=FONT_BUTTON
         )
-        self.view_button.grid(row=1, column=1, pady=20)
+        self.view_button.grid(row=1, column=0,padx=10, pady=10)
 
         self.edit_button = Button(
             text="Edit Cocktail", command=self.edit_cocktail, highlightthickness=0, bg="#8B4513", fg="black",
             font=FONT_BUTTON
         )
-        self.edit_button.grid(row=1, column=2, pady=20)
+        self.edit_button.grid(row=0, column=1, pady=20)
 
         self.search_button = Button(
             text="Search Cocktail", command=self.search_cocktail, highlightthickness=0, bg="#8B4513", fg="black",
             font=FONT_BUTTON
         )
-        self.search_button.grid(row=2, column=1, pady=20)
+        self.search_button.grid(row=1, column=1,padx =10, pady=10)
 
         # Make the grid layout responsive
         self.window.grid_columnconfigure(0, weight=1)
         self.window.grid_columnconfigure(1, weight=1)
         self.window.grid_columnconfigure(2, weight=1)
+        self.window.grid_rowconfigure(3, weight=1)
         self.window.grid_rowconfigure(0, weight=1)
-        self.window.grid_rowconfigure(1, weight=1)
 
         # Start the GUI loop
         self.window.mainloop()
@@ -109,7 +108,7 @@ class CocktailAppGUI:
         return scrollable_frame
 
     def create_input_field(self, popup, label_text, row):
-        # i have a lot of the same labels so this func make it shorter by making tamplete
+        # I have a lot of the same labels so this func make it shorter by making template
         Label(popup, text=label_text, bg=THEME_COLOR, font=FONT_BODY).grid(row=row, column=0, sticky="w")
         entry = Entry(popup, width=30)
         entry.grid(row=row, column=1)
@@ -121,10 +120,10 @@ class CocktailAppGUI:
         popup.config(padx=20, pady=20, bg=THEME_COLOR)
 
         # Input fields
-        self.create_input_field(popup, "Name:", 0)
-        self.create_input_field(popup, "ABV (%):", 1)
-        self.create_input_field(popup, "Ingredients (comma-separated):", 2)
-        self.create_input_field(popup, "Instructions:", 3)
+        name_entry = self.create_input_field(popup, "Name:", 0)
+        abv_entry = self.create_input_field(popup, "ABV (%):", 1)
+        ingredients_entry = self.create_input_field(popup, "Ingredients (comma-separated):", 2)
+        instructions_entry = self.create_input_field(popup, "Instructions:", 3)
 
         Label(popup, text="Is Easy to Make (yes/no):", bg=THEME_COLOR, font=FONT_BODY).grid(row=4, column=0, sticky="w")
         easy_entry = Entry(popup, width=30)
@@ -136,18 +135,41 @@ class CocktailAppGUI:
         method_dropdown.config(bg="white", font=FONT_BODY)
         method_dropdown.grid(row=5, column=1)
 
-        Button(
+        # # Icon for add button
+        # add_cocktail_icon_path = "images/add sq.png"  # Make sure this path is correct
+        # add_cocktail_icon = PhotoImage(file=add_cocktail_icon_path)
+
+        # Add button with icon
+        add_button = Button(
             popup,
             text="Add",
-            command=lambda: self.save_cocktail(name_entry.get(), abv_entry.get(), easy_entry.get(), method_var.get(),
-                                               popup),
-            bg=BUTTON_COLOR_PRIMARY, fg="white", font=FONT_BUTTON
-        ).grid(row=6, column=0, columnspan=2, pady=20)
+            command=lambda: self.save_cocktail(
+                name_entry.get(),
+                abv_entry.get(),
+                ingredients_entry.get(),
+                instructions_entry.get(),
+                easy_entry.get(),
+                method_var.get(),
+                popup),
+            bg=BUTTON_COLOR_PRIMARY
+        )
+        # add_button.image = add_cocktail_icon  # Prevent garbage collection of the image
+        # add_button.grid(row=6, column=0, pady=20)
 
-        Button(popup, text="Cancel", command=popup.destroy, bg="gray", fg="white", font=FONT_BUTTON).grid(row=7,
-                                                                                                          column=0,
-                                                                                                          columnspan=2,
-                                                                                                          pady=10)
+        # Cancel button
+        Button(
+            popup,
+            text="Cancel",
+            command=popup.destroy,
+            bg="gray",
+            fg="white",
+            font=FONT_BUTTON
+        ).grid(row=7, column=0, columnspan=2)
+
+        # # Configure row and column resizing for the scrollable content
+        # popup.grid_rowconfigure(2, weight=1)
+        # popup.grid_columnconfigure(0, weight=1)
+        #
 
     def save_cocktail(self, name, abv, ingredients, instructions, easy, method, popup):
         """
@@ -513,7 +535,7 @@ class CocktailAppGUI:
         """
         Saves the additional updates (favorites and personal notes).
         """
-        updates = {# Save favorite status explicitly
+        updates = {  # Save favorite status explicitly
             "is_favorite": is_favorite,
         }
         if note.strip():
