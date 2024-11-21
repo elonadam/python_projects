@@ -2,7 +2,8 @@ from tkinter import *
 from tkinter import messagebox
 from cocktail_Manager import CocktailManager  # Replace with your class import
 from cocktail import Cocktail  # Replace with your class import
-
+# TODO 8 i want black background but need to find where i defined the text as black
+# THEME_COLOR = "#F7E1D7"  # Light cream
 THEME_COLOR = "#F7E1D7"  # Light cream
 BUTTON_COLOR_PRIMARY = "#D2691E"  # Chocolate brown
 BUTTON_COLOR_SECONDARY = "#C58F6F"  # Soft brown
@@ -26,11 +27,11 @@ class CocktailAppGUI:
         self.window.protocol("WM_DELETE_WINDOW", self.close_app)
 
         # Canvas for displaying cocktails
-        self.canvas = Canvas(bg="black", width=400, height=300, highlightthickness=0)
+        self.canvas = Canvas(bg="yellow", width=400, height=300, highlightthickness=0)
         self.canvas_text = self.canvas.create_text(
             200, 150, width=380, text="Welcome to your Cocktail Book!", font=FONT_HEADER
         )
-        self.canvas.grid(row=0, column=0, columnspan=3, pady=20)
+        self.canvas.grid(row=0, column=0, columnspan=2, pady=20)
 
         # Add a logo to the main screen
         self.logo = PhotoImage(file="logo2.png")  # Ensure the image is in the same directory
@@ -38,35 +39,49 @@ class CocktailAppGUI:
         self.logo_label.grid(row=0, column=0, columnspan=3, pady=20)
 
         # Icon for add_cocktail button
-        add_cocktail_icon_path = "images/add sq.png"  # Make sure this path is correct
+        add_cocktail_icon_path = "images/add clear 100.png"  # Make sure this path is correct
         add_cocktail_icon = PhotoImage(file=add_cocktail_icon_path)
+        # Icon for search_cocktail button
+        search_cocktail_icon_path = "images/search_icon_100.png"  # Make sure this path is correct
+        search_cocktail_icon = PhotoImage(file=search_cocktail_icon_path)
+        # Icon for edit_cocktail button
+        edit_cocktail_icon_path = "images/edit clear 100.png"  # Make sure this path is correct
+        edit_cocktail_icon = PhotoImage(file=edit_cocktail_icon_path)
+        # Icon for view_cocktail button
+        view_cocktail_icon_path = "images/view clear 100.png"  # Make sure this path is correct
+        view_cocktail_icon = PhotoImage(file=view_cocktail_icon_path)
 
         # Buttons
         self.add_button = Button(
-            text="Add Cocktail", command=self.add_cocktail, highlightthickness=0, bg="#8B4513", fg="black",
+            text="", command=self.add_cocktail, highlightthickness=0, bg="#000000", fg="black",borderwidth=0,
             font=FONT_BUTTON,
             image=add_cocktail_icon,
             compound="top",
         )
-        self.add_button.grid(row=0, column=0,padx=10, pady=10)
+        self.add_button.grid(row=1, column=0,padx=10, pady=10)
 
         self.view_button = Button(
-            text="View Cocktails", command=self.view_cocktails, highlightthickness=0, bg="#8B4513", fg="black",
-            font=FONT_BUTTON
+            text="", command=self.view_cocktails, highlightthickness=0, bg="#000000", fg="black",borderwidth=0,
+            font=FONT_BUTTON,
+            image=view_cocktail_icon,
         )
-        self.view_button.grid(row=1, column=0,padx=10, pady=10)
+        self.view_button.grid(row=1, column=1,padx=10, pady=10)
 
         self.edit_button = Button(
-            text="Edit Cocktail", command=self.edit_cocktail, highlightthickness=0, bg="#8B4513", fg="black",
-            font=FONT_BUTTON
+            text="", command=self.edit_cocktail, highlightthickness=0, bg="#000000", fg="black",borderwidth=0,
+            font=FONT_BUTTON,
+            image=edit_cocktail_icon,
+            compound="top",
         )
-        self.edit_button.grid(row=0, column=1, pady=20)
+        self.edit_button.grid(row=2, column=0, pady=20)
 
         self.search_button = Button(
-            text="Search Cocktail", command=self.search_cocktail, highlightthickness=0, bg="#8B4513", fg="black",
-            font=FONT_BUTTON
+            text="", command=self.search_cocktail, highlightthickness=0, bg="#000000", fg="black",borderwidth=0,
+            font=FONT_BUTTON,
+            image=search_cocktail_icon,
+            compound="top",
         )
-        self.search_button.grid(row=1, column=1,padx =10, pady=10)
+        self.search_button.grid(row=2, column=1,padx =10, pady=10)
 
         # Make the grid layout responsive
         self.window.grid_columnconfigure(0, weight=1)
@@ -109,7 +124,7 @@ class CocktailAppGUI:
 
     def create_input_field(self, popup, label_text, row):
         # I have a lot of the same labels so this func make it shorter by making template
-        Label(popup, text=label_text, bg=THEME_COLOR, font=FONT_BODY).grid(row=row, column=0, sticky="w")
+        Label(popup, text=label_text, bg="red", font=FONT_BODY).grid(row=row, column=0, sticky="w")
         entry = Entry(popup, width=30)
         entry.grid(row=row, column=1)
         return entry
