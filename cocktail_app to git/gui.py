@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 from cocktail_Manager import CocktailManager  # Replace with your class import
 from cocktail import Cocktail  # Replace with your class import
+
 # TODO 8 i want black background but need to find where i defined the text as black
 # THEME_COLOR = "#F7E1D7"  # Light cream
 THEME_COLOR = "#F7E1D7"  # Light cream
@@ -11,6 +12,22 @@ TEXT_COLOR = "#2C2C2C"  # Dark gray
 FONT_HEADER = ("Georgia", 20, "bold")
 FONT_BODY = ("Roboto", 14,)
 FONT_BUTTON = ("Roboto", 16, "bold")
+
+""" ALL the functions here
+__init__: Sets up the main GUI and its components.
+create_scrollable_frame: Handles UI-related tasks for creating scrollable content.
+create_input_field: Simplifies repetitive GUI elements.
+add_cocktail: Opens a popup for the user to input cocktail details.
+view_cocktails: Displays a list of cocktails in a new window.
+edit_cocktail: Opens a popup to select a cocktail for editing.
+open_edit_form: Shows the form pre-filled with a selected cocktail's details.
+search_cocktail: Opens a popup for searching cocktails by category.
+display_search_results: Displays filtered search results in a scrollable frame.
+confirm_make_cocktail: Asks for confirmation to make a selected cocktail.
+make_cocktail: Displays cocktail details and updates times made.
+close_app: Handles the application's exit functionality.
+
+"""
 
 
 class CocktailAppGUI:
@@ -34,7 +51,8 @@ class CocktailAppGUI:
         self.canvas.grid(row=0, column=0, columnspan=2, pady=20)
 
         # Add a logo to the main screen
-        self.logo = PhotoImage(file="logo2.png")  # Ensure the image is in the same directory
+
+        self.logo = PhotoImage(file="logo2.png")
         self.logo_label = Label(image=self.logo, bg=THEME_COLOR)
         self.logo_label.grid(row=0, column=0, columnspan=3, pady=20)
 
@@ -53,22 +71,22 @@ class CocktailAppGUI:
 
         # Buttons
         self.add_button = Button(
-            text="", command=self.add_cocktail, highlightthickness=0, bg="#000000", fg="black",borderwidth=0,
+            text="", command=self.add_cocktail, highlightthickness=0, bg="#000000", fg="black", borderwidth=0,
             font=FONT_BUTTON,
             image=add_cocktail_icon,
             compound="top",
         )
-        self.add_button.grid(row=1, column=0,padx=10, pady=10)
+        self.add_button.grid(row=1, column=0, padx=10, pady=10)
 
         self.view_button = Button(
-            text="", command=self.view_cocktails, highlightthickness=0, bg="#000000", fg="black",borderwidth=0,
+            text="", command=self.view_cocktails, highlightthickness=0, bg="#000000", fg="black", borderwidth=0,
             font=FONT_BUTTON,
             image=view_cocktail_icon,
         )
-        self.view_button.grid(row=1, column=1,padx=10, pady=10)
+        self.view_button.grid(row=1, column=1, padx=10, pady=10)
 
         self.edit_button = Button(
-            text="", command=self.edit_cocktail, highlightthickness=0, bg="#000000", fg="black",borderwidth=0,
+            text="", command=self.edit_cocktail, highlightthickness=0, bg="#000000", fg="black", borderwidth=0,
             font=FONT_BUTTON,
             image=edit_cocktail_icon,
             compound="top",
@@ -76,12 +94,12 @@ class CocktailAppGUI:
         self.edit_button.grid(row=2, column=0, pady=20)
 
         self.search_button = Button(
-            text="", command=self.search_cocktail, highlightthickness=0, bg="#000000", fg="black",borderwidth=0,
+            text="", command=self.search_cocktail, highlightthickness=0, bg="#000000", fg="black", borderwidth=0,
             font=FONT_BUTTON,
             image=search_cocktail_icon,
             compound="top",
         )
-        self.search_button.grid(row=2, column=1,padx =10, pady=10)
+        self.search_button.grid(row=2, column=1, padx=10, pady=10)
 
         # Make the grid layout responsive
         self.window.grid_columnconfigure(0, weight=1)
@@ -150,11 +168,6 @@ class CocktailAppGUI:
         method_dropdown.config(bg="white", font=FONT_BODY)
         method_dropdown.grid(row=5, column=1)
 
-        # # Icon for add button
-        # add_cocktail_icon_path = "images/add sq.png"  # Make sure this path is correct
-        # add_cocktail_icon = PhotoImage(file=add_cocktail_icon_path)
-
-        # Add button with icon
         add_button = Button(
             popup,
             text="Add",
@@ -206,7 +219,7 @@ class CocktailAppGUI:
                 is_easy_to_make=is_easy,
                 method=method,
             )
-            self.manager.add_cocktail(new_cocktail)
+            self.manager.add_cocktail(new_cocktail)  # saving the cocktail with a call to manager
             messagebox.showinfo(title="Success", message=f"Cocktail '{name}' added!")
             popup.destroy()
         except ValueError:
@@ -214,25 +227,48 @@ class CocktailAppGUI:
 
     def view_cocktails(self):
         """
-        Displays all cocktails in a new window.
+         Displays all cocktails in a scrollable frame inside a new window.
         """
         # Create a new popup window
         popup = Toplevel(self.window)
         popup.title("Cocktail Book")
         popup.config(padx=20, pady=20, bg=THEME_COLOR)
 
+        # Scrollable frame setup
+        canvas = Canvas(popup, bg=THEME_COLOR, highlightthickness=0)
+        scrollbar = Scrollbar(popup, orient="vertical", command=canvas.yview)
+        scrollable_frame = Frame(canvas, bg=THEME_COLOR)
+
+        # Bind the scrollable frame to the canvas
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+
+        # Place the canvas and scrollbar
+        canvas.pack(side=LEFT, fill=BOTH, expand=True)
+        scrollbar.pack(side=RIGHT, fill=Y)
+
         # List all cocktails
         if not self.manager.cocktail_book:
-            Label(popup, text="No cocktails available!", bg=THEME_COLOR, fg="black", font=FONT_BODY).pack()
+            Label(scrollable_frame, text="No cocktails available!", bg=THEME_COLOR, fg="black", font=FONT_BODY).pack(
+                pady=10)
         else:
             for name, details in self.manager.cocktail_book.items():
                 Label(
-                    popup,
+                    scrollable_frame,
                     text=f"{name} - {details['method']} - {details['abv']}%",
                     bg=THEME_COLOR,
                     fg="black",
                     font=FONT_BODY,
-                ).pack()
+                    anchor="w",
+                    justify="left",
+                ).pack(fill="x", padx=10, pady=5)
+
+
+
 
     def edit_cocktail(self):
         """
